@@ -1,0 +1,18 @@
+body, html {
+    height: 100%;
+}
+
+.bgimg {
+    image: url('MIDDLE LOGO.jpg');
+    position: center;
+    size: contain;
+    repeat: no-repeat;
+    min-height: 100%;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg {
+        background-attachment: scroll;
+    }
+}

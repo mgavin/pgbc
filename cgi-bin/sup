@@ -1,0 +1,6 @@
+#!/usr/bin/ruby
+
+puts "Content-type: text/plain \n\n"
+puts "Hello Shworld"
+ENV.each_pair {|key, value| puts "#{key} => #{value}"}
+puts "cache control?"

@@ -1,0 +1,31 @@
+# Ignore files in solutions directories that don't contain a dot.
+*/*/solutions/*
+!*/*/solutions/*.*
+
+# Ignore compiler output and other generated files.
+*/*/description/*.html
+*/problems.html
+a.out
+*.exe
+*.obj
+*.class
+*.pyc
+
+# Ignore temporary files.
+*.swp
+*.tmp
+.DS_Store
+
+# Ignore emacs auto-save files.
+\#*\#
+*~
+.\#*
+
+# Ignore pictures
+*.jpg
+
+# Ignore manual backups
+*.bak
+
+# Ignore org files
+*.org

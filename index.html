@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <title>Pat Gavin Basketball Fundamentals Camp</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="fun.js"></script>
+  <style>
+    body { font-family: sans-serif, Verdana;}
+    h1,h2,h3,h4,h5,h6 {font-family: Arial Black, Impact, sans-serif;}
+    .w3-row-padding img {margin-bottom: 12px}
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {width: 120px;}
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {margin-left: 120px}
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+  </style>
+  <body>
+
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+      <!-- Avatar image in top left corner -->
+      <a href="#main"><img src="MIDDLELOGO.jpg" style="width:100%"></a>
+      <a href="#signup" class="w3-bar-item w3-button w3-padding-large">
+        <i class="fa fa-wpforms w3-xxlarge"></i>
+        <p>SIGN UP</p>
+      </a>
+      <a href="#about" class="w3-bar-item w3-button w3-padding-large">
+        <i class="fa fa-question-circle-o w3-xxlarge"></i>
+        <p>ABOUT</p>
+      </a>
+      <a href="#testimonial" class="w3-bar-item w3-button w3-padding-large">
+        <i class="fa fa-phone-square w3-xxlarge"></i>
+        <p>TESTIMONIAL</p>
+      </a>
+      <a href="#articles" class="w3-bar-item w3-button w3-padding-large">
+        <i class="fa fa-newspaper-o w3-xxlarge"></i>
+        <p>ARTICLES</p>
+      </a>
+    </nav>
+
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+      <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+        <a href="#signup" class="w3-bar-item w3-button" style="width:25% !important">SIGN UP</a>
+        <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+        <a href="#testimonial" class="w3-bar-item w3-button" style="width:25% !important">TESTIMONIAL</a>
+        <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">ARTICLES</a>
+      </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+      <!-- Header/Home -->
+      <header class="w3-container w3-padding-32 w3-center" id="home">
+        <h1 class="w3-jumbo">Pat Gavin</h1>
+        <h1 class="w3-jumbo">Basketball Fundamentals Camp</h1>
+        <img src="MIDDLEIMG.jpg" class="w3-image" width="992" height="1108">
+      </header>
+
+      <!-- About Section -->
+      <div class="w3-content w3-justify w3-text-black w3-padding-16" id="about">
+        <h2 class="w3-text-black">About</h2>
+        <hr style="width:200px" class="w3-opacity">
+        <p>Every year in Metarie, New Orleans, a basketball camp is hosted to help local youth practice the basics of basketball.</p>
+      </div>
+      
+      <div class="w3-justify w3-content w3-padding-16 w3-text-black" id="testimonial">
+        <!-- Testimonials -->
+        <h2 class="w3-text-black">Testimonials</h2>  
+        <p class="w3-large"><span class="w3-margin-right">Dennis Gallagher</span> Writer at NOLA Times-Picayune.</p>
+        <p><i>"Seeing Gavin in action on the court at his camp is seeing a coach in his element, thoroughly teaching the basics of the game to kids at a time when the fundamentals are often overlooked."</i></p>
+        
+        <p class="w3-large"><span class="w3-margin-right">Gary Bielman</span></p>
+        <p><i>"Pat has really stepped up with this camp. He loves doing it and wants to give back."</i></p>
+        <!-- End About Section -->
+      </div>
+
+      <!-- Sign up form -->
+      <div class="w3-justify w3-content w3-text-black w3-padding-16" id="signup">
+        <h2 class="w3-text-black">Sign Up!</h2>
+
+        <div class="w3-section" id="signup">
+          <p class="w3-xlarge w3-justify">The next dates for the camp are <span class="w3-text-red">July 7th</span> and <span class="w3-text-red">8th</span>, <span class="w3-text-red">2018.</span></p>
+        </div>
+        <div class="w3-section" id="signupform">
+          <p>To sign up for the camp, please fill out these details:</p>
+          <div class="w3-responsive" style="width:60%">
+            <table class="w3-table-all w3-border-0">
+              <tbody id="child_list">
+              <tr class="w3-border-0">
+                <td>
+                  <input class="w3-input" type="text" placeholder="Guardian Name" required name="Name">
+                </td>
+              </tr>
+              <tr class="w3-border-0 w3-white">
+                <td>
+                  <input class="w3-input" type="text" placeholder="Email" required name="Email">
+                </td>
+                <td>
+                  <input class="w3-input" type="text" placeholder="Phone Number" required name="Phone">
+                </td>
+              </tr>
+              <tr class="w3-border-0 w3-white" id="child1" name="child1">
+                <td>
+                  <input class="w3-input" type="text" placeholder="Child Name" required name="name">
+                </td>
+                <td>
+                  <select class="w3-half w3-select" style="width:45%" required name="age">
+                    <option selected disabled value="">Age</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+                  <select class="w3-half w3-select w3-margin-left" style="width:45%" required name="ssize">
+                    <option selected disabled value="">Shirt Size</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                  </select>
+                </td>
+                <td>
+                  <button class="w3-button w3-light-grey" onclick="addApplicantRow()">+</button>
+                </td>
+                <td>
+                  <button class="w3-button w3-light-grey" disabled onclick="">-</button>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="w3-padding-32">
+            <button class="w3-button w3-light-grey w3-padding-large" onclick="submit()">
+              <i class="fa fa-paper-plane"></i> SUBMIT
+            </button>
+          </p>
+          
+        </div>
+      </div>
+      <div class="w3-padding-16 w3-justify w3-content" style="display:none;" id="signupthanks">
+        <h2>Thanks for signing up!</h2>
+        <h2>Emails will go out prior to camp for confirmation.</h2>
+      </div>
+      <!-- End Contact Section -->
+
+      <div class="w3-justify w3-content w3-text-black w3-padding-16" id="articles">
+        <h2>Articles</h2>
+        <div class="w3-section">
+          <a href="http://blog.nola.com/eastjefferson/2014/07/kenner_basketball_camp_ups_the.html" target="_new">
+            <img src="586c27791f343036ffc2dc36908480a1--basketball-camps-four-days.jpg" width="220px" height="186px"/>
+          </a>
+        </div> 
+      </div>
+    
+    <!-- Contact Modal -->
+    <!-- 
+         <div id="contact_modal" class="w3-modal">
+           <div class="w3-modal-content w3-animate-zoom">
+             <div class="w3-container w3-black">
+               <span onclick="document.getElementById('signup').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+               <h1>Contact</h1>
+             </div>
+             <div class="w3-container">
+               <p>Reserve a table, ask for today's special or just send us a message:</p>
+               <form action="/action_page.php" target="_blank">
+                 <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+                 <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+                 <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
+                 <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+                 <p><button class="w3-button" type="submit">SEND MESSAGE</button></p>
+               </form>
+             </div>
+           </div>
+         </div>
+         -->
+    <!-- Footer -->
+    <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+      <a href="https://www.facebook.com/pg/patgavincamp/" class="fa fa-facebook-official w3-hover-opacity"></a>
+      <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+      <!-- End footer -->
+    </footer>
+
+    <!-- END PAGE CONTENT -->
+    </div>
+  </body>
+</html>
